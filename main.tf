@@ -36,7 +36,7 @@ module "azure_transit_1" {
 # GCP Transit
 # ---------------------------------------------------------------------------------------------------------------------
 module "gcp_transit_1" {
-  source = "terraform-aviatrix-modules/mc-transit/aviatrix"
+  source              = "terraform-aviatrix-modules/mc-transit/aviatrix"
   cloud               = "gcp"
   name                = "gcp-transit"
   region              = var.gcp_region
