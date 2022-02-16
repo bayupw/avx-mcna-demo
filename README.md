@@ -7,12 +7,14 @@ Terraform codes to setup Aviatrix Multi-Cloud Networking Architecture using Avia
 ## Instructions
 
 Set the following environment variables:
-```AVIATRIX_CONTROLLER_IP```
-```AVIATRIX_USERNAME```
-```AVIATRIX_PASSWORD```
-```TF_VAR_aws_account```
-```TF_VAR_azure_account```
-```TF_VAR_gcp_account```
+Variables | Description
+--- | ---
+AVIATRIX_CONTROLLER_IP | Aviatrix Controller IP or FQDN 
+AVIATRIX_USERNAME | Aviatrix Controller Username
+AVIATRIX_PASSWORD | Aviatrix Controller Password
+TF_VAR_aws_account | AWS Aviatrix Account 
+TF_VAR_azure_account | Azure Aviatrix Account
+TF_VAR_gcp_account | GCP Aviatrix Account
 
 ### Set environment variables in local shell:
 ```sh
