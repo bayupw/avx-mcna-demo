@@ -4,31 +4,51 @@ Terraform codes to setup Aviatrix Multi-Cloud Networking Architecture using Avia
 
 ![Aviatrix MCNA CoPilot Topology](images/avx-mcna-demo-copilot.png "Aviatrix CoPilot Topology")
 
-## Instructions
+## Environment Variables
 
-Set the following environment variables:
-Variables | Description
---- | ---
-AVIATRIX_CONTROLLER_IP | Aviatrix Controller IP or FQDN 
-AVIATRIX_USERNAME | Aviatrix Controller Username
-AVIATRIX_PASSWORD | Aviatrix Controller Password
-TF_VAR_aws_account | AWS Aviatrix Account 
-TF_VAR_azure_account | Azure Aviatrix Account
-TF_VAR_gcp_account | GCP Aviatrix Account
+To run this project, you will need to set the following environment variables
 
-### Set environment variables in local shell:
-```sh
-$ export AVIATRIX_CONTROLLER_IP="aviatrixcontroller.aviatrix.lab"
-$ export AVIATRIX_USERNAME="admin"
-$ export AVIATRIX_PASSWORD="Aviatrix123!"
-$ export TF_VAR_aws_account="AWS-Aviatrix-Account"
-$ export TF_VAR_azure_account="Azure-Aviatrix-Account"
-$ export TF_VAR_gcp_account="GCP-Aviatrix-Account"
+`AVIATRIX_CONTROLLER_IP`
+
+`AVIATRIX_USERNAME`
+
+`AVIATRIX_PASSWORD`
+
+`TF_VAR_aws_account`
+
+`TF_VAR_azure_account`
+
+`TF_VAR_gcp_account`
+
+## Run Locally
+
+Clone the project
+
+```bash
+git clone https://github.com/bayupw/avx-mcna-demo
 ```
 
-### Terraform workflow:
-```sh
-$ terraform init
-$ terraform plan
-$ terraform apply -auto-approve
+Go to the project directory
+
+```bash
+cd avx-mcna-demo
+```
+
+Set environment variables
+
+```bash
+export AVIATRIX_CONTROLLER_IP="aviatrixcontroller.aviatrix.lab"
+export AVIATRIX_USERNAME="admin"
+export AVIATRIX_PASSWORD="Aviatrix123!"
+export TF_VAR_aws_account="AWS-Aviatrix-Account"
+export TF_VAR_azure_account="Azure-Aviatrix-Account"
+export TF_VAR_gcp_account="GCP-Aviatrix-Account"
+```
+
+Terraform workflow
+
+```bash
+terraform init
+terraform plan
+terraform apply -auto-approve
 ```
