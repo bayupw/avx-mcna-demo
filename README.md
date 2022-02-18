@@ -1,6 +1,6 @@
 # Aviatrix MCNA
 
-Terraform codes to setup single region Aviatrix Multi-Cloud Networking Architecture using Aviatrix modules across AWS, Azure and GCP.
+This repository provides a Terraform implementation that deploys a single region Aviatrix Multi-Cloud Networking Architecture using Aviatrix modules across AWS, Azure and GCP.
 
 ![Aviatrix MCNA CoPilot Topology](images/avx-mcna-demo-copilot.png "Aviatrix CoPilot Topology")
 
