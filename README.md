@@ -4,6 +4,12 @@ This repository provides a Terraform implementation that deploys a single region
 
 ![Aviatrix MCNA CoPilot Topology](images/avx-mcna-demo-copilot.png "Aviatrix CoPilot Topology")
 
+## Prerequisites
+
+Please make sure you have:
+- Aviatrix Controller 6.6
+- AWS, Azure, and GCP access accounts are onboarded. 
+
 ## Environment Variables
 
 To run this project, you will need to set the following environment variables
